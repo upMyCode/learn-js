@@ -1,19 +1,21 @@
-const myProg = {
-    myLang: "JavaScript"
+// ****************lesson__1**************
+
+const numberOfFilms = +prompt('Сколько фильмов вы просмотрели?','');
+
+const personalMovieDB = {
+    count : numberOfFilms,
+    movie: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
-console.log(myProg["myLang"]);
+const question = prompt(' Что вы смотрели в последний раз?', ''),
+      question2 = prompt('На сколько вы его оцените?', ''),
+      question3 = prompt(' Что вы смотрели в последний раз?', ''),
+      question4 = prompt('На сколько вы его оцените?', '');
+      
+personalMovieDB.movie[question] = question2;
+personalMovieDB.movie[question3] = question4;
 
-const question = confirm('Вы классный прогер???');
-
-console.log(question);
-
-const secondQuestion = prompt('Вы парокрастинатор?', 'Дыа');
-
-console.log(typeof(secondQuestion));
-
-let rundom = 'viseman';
-console.log(`https://something/${rundom}/6`);
-
-
-console.log( 2 * 5 - 2 == '8');
+console.log(personalMovieDB);
