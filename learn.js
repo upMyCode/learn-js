@@ -1,24 +1,43 @@
 // ****************lesson__1**************
 
-// const numberOfFilms = +prompt('Сколько фильмов вы просмотрели?','');
+const numberOfFilms = +prompt('Сколько фильмов вы просмотрели?','');
 
-// const personalMovieDB = {
-//     count : numberOfFilms,
-//     movie: {},
-//     actors: {},
-//     genres: [],
-//     privat: false
-// };
+const personalMovieDB = {
+    count : numberOfFilms,
+    movie: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// const question = prompt(' Что вы смотрели в последний раз?', ''),
-//       question2 = prompt('На сколько вы его оцените?', ''),
-//       question3 = prompt(' Что вы смотрели в последний раз?', ''),
-//       question4 = prompt('На сколько вы его оцените?', '');
-      
-// personalMovieDB.movie[question] = question2;
-// personalMovieDB.movie[question3] = question4;
+for(let i = 0 ; i<2; i++){
+    const question = prompt('Что вы смотрели в последний раз?', ''),
+          question2 = prompt('На сколько вы его оцените?', '');
 
-// console.log(personalMovieDB);
+    if (question != null && question2 != null && question != '' && question2 != '' && question.length < 50){
+        personalMovieDB.movie[question] = question2;
+        console.log('done');
+    }
+    else {
+        console.log('error');
+        i--;
+    }
+
+    if(personalMovieDB.count < 10){
+        console.log('Мало фильмов');
+    }
+    else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+        console.log('Среднее количество');
+    }
+    else if( personalMovieDB.count >= 30) {
+        console.log('Да вы круто чел');
+    }
+    else{
+        console.log('Error');
+    }
+}
+
+console.log(personalMovieDB);
 
 // // (a > 0) ? console.log('true') : console.log('false');
 
@@ -33,10 +52,15 @@
 //         break;
 // }
 
+// let num = 100;
 
-let num = 100;
+// while (num <= 120){
+//     console.log('Привет');
+//     num++;
+// }
 
-while (num <= 97){
-    console.log('Привет');
-    num++;
-}
+// do {
+//     console.log('Привет');
+//     num++;
+// }
+// while (num <= 120);
