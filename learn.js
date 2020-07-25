@@ -64,3 +64,17 @@ console.log(personalMovieDB);
 //     num++;
 // }
 // while (num <= 120);
+
+
+let item = 'miniItem';
+console.log(item.indexOf('Item'));
+
+console.log(item.slice(4, 8));
+
+console.log(item.substring(4, 8));
+
+console.log(item.substr(4, 5));
+
+console.log(parseInt('13.6px'));
+
+console.log(parseInt('13.4px'));
