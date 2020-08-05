@@ -145,9 +145,22 @@ const options = {
     colors:{
         border: 'black',
         background:'red'
+    },
+    makeTest: function(){
+        console.log('This is my metod')
     }
 };
 
+options.makeTest();
+
+console.log(Object.keys(options).length);
+
 delete options.name;
 
+console.log(options['name'])
+
 console.log(options);
+
+for (let key in options){
+    console.log(key);
+} 
