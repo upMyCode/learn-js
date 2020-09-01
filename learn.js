@@ -1,59 +1,59 @@
 // ****************lesson__1**************
 
- let numberOfFilms;
+//  let numberOfFilms;
 
-const personalMovieDB = {
-    count : numberOfFilms,
-    movie: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const personalMovieDB = {
+//     count : numberOfFilms,
+//     movie: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
-function rememberMyFilms (){
-    for(let i = 0 ; i<2; i++){
-        const question = prompt('Что вы смотрели в последний раз?', ''),
-              question2 = prompt('На сколько вы его оцените?', '');
+// function rememberMyFilms (){
+//     for(let i = 0 ; i<2; i++){
+//         const question = prompt('Что вы смотрели в последний раз?', ''),
+//               question2 = prompt('На сколько вы его оцените?', '');
     
-        if (question != null && question2 != null && question != '' && question2 != '' && question.length < 50){
-            personalMovieDB.movie[question] = question2;
-            console.log('done');
-        }
-        else {
-            console.log('error');
-            i--;
-        }
-}
+//         if (question != null && question2 != null && question != '' && question2 != '' && question.length < 50){
+//             personalMovieDB.movie[question] = question2;
+//             console.log('done');
+//         }
+//         else {
+//             console.log('error');
+//             i--;
+//         }
+// }
 
-}
-    rememberMyFilms();
+// }
+//     rememberMyFilms();
 
 
-    function showMyDB(){
-        let privat = personalMovieDB.privat;
+//     function showMyDB(){
+//         let privat = personalMovieDB.privat;
         
-        if(privat == false ){
-            console.log(personalMovieDB);
-        }
-        else {
-            console.log( privat );
-        }
-    }
+//         if(privat == false ){
+//             console.log(personalMovieDB);
+//         }
+//         else {
+//             console.log( privat );
+//         }
+//     }
 
-    showMyDB();
+//     showMyDB();
 
-     function writeYourGenrews() {
-         for(i = i ; i < 10; i++){
-            const question3 = prompt(`Ваш любимый жанр под номером ${i}',''`);
-            personalMovieDB.genres[i-1] = question3;
-         }
-     }
+//      function writeYourGenrews() {
+//          for(i = i ; i < 10; i++){
+//             const question3 = prompt(`Ваш любимый жанр под номером ${i}',''`);
+//             personalMovieDB.genres[i-1] = question3;
+//          }
+//      }
 
-     writeYourGenrews();
+//      writeYourGenrews();
 
-     for(i = 0; i < 3; ++i){
-         console.log(i);
-     }
+//      for(i = 0; i < 3; ++i){
+//          console.log(i);
+//      }
 
 //      function detectPersonalLevel(){
 //         if(personalMovieDB.count < 10){
