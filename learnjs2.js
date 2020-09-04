@@ -58,10 +58,45 @@
 
 // console.log(a, c);
 
-function count(num){
-    console.log( num*this );
+// function count(num){
+//     console.log( num*this );
+// }
+
+// const dobl = count.bind(2);
+
+// console.log(dobl(6));
+
+
+class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width  = width;
+    }
+
+    calcArea(){
+        return this.height * this.width;
+    }
+    
 }
 
-const dobl = count.bind(2);
+const square = new Rectangle(10, 10);
 
-console.log(dobl(6));
+console.log(square.calcArea());
+
+
+
+class ColoredRectangle extends Rectangle {
+    constructor(height, width, text, bgColor){
+        super(height, width);
+        this.text = text;
+        this.bgColor = bgColor;
+    }
+
+    showMyProps(){
+        console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+    }
+}
+
+const col = new ColoredRectangle(34, 10, "text",'dark');
+
+col.showMyProps();
