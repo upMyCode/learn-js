@@ -67,36 +67,46 @@
 // console.log(dobl(6));
 
 
-class Rectangle {
-    constructor(height, width) {
-        this.height = height;
-        this.width  = width;
-    }
+// class Rectangle {
+//     constructor(height, width) {
+//         this.height = height;
+//         this.width  = width;
+//     }
 
-    calcArea(){
-        return this.height * this.width;
-    }
+//     calcArea(){
+//         return this.height * this.width;
+//     }
     
+// }
+
+// const square = new Rectangle(10, 10);
+
+// console.log(square.calcArea());
+
+
+
+// class ColoredRectangle extends Rectangle {
+//     constructor(height, width, text, bgColor){
+//         super(height, width);
+//         this.text = text;
+//         this.bgColor = bgColor;
+//     }
+
+//     showMyProps(){
+//         console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
+//     }
+// }
+
+// const col = new ColoredRectangle(34, 10, "text",'dark');
+
+// col.showMyProps();
+
+
+function Constr(age, year) {
+    this.age = age;
+    this.year = year;
 }
 
-const square = new Rectangle(10, 10);
+var obj = new Constr(11, 1999);
 
-console.log(square.calcArea());
-
-
-
-class ColoredRectangle extends Rectangle {
-    constructor(height, width, text, bgColor){
-        super(height, width);
-        this.text = text;
-        this.bgColor = bgColor;
-    }
-
-    showMyProps(){
-        console.log(`Текст: ${this.text}, цвет: ${this.bgColor}`);
-    }
-}
-
-const col = new ColoredRectangle(34, 10, "text",'dark');
-
-col.showMyProps();
+console.log(obj.age);
