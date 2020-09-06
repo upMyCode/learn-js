@@ -102,11 +102,27 @@
 // col.showMyProps();
 
 
-function Constr(age, year) {
-    this.age = age;
-    this.year = year;
-}
+// function Constr(age, year) {
+//     this.age = age;
+//     this.year = year;
+//     this.hello = function(){
+//         console.log(this.year);
+//     }
+// }
 
-var obj = new Constr(11, 1999);
+// var obj = new Constr(11, 1999);
 
-console.log(obj.age);
+// console.log(obj.age);
+// obj.hello()
+
+
+
+const testArr = [ 'abc', 'cde'];
+console.log(testArr.some(test => test == 'abc'));
+
+
+const arr = [4, 5, 6, 7];
+var c = arr.reduce((acc, value) => acc + value);
+console.log(c);
+
+
