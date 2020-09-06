@@ -121,8 +121,25 @@ const testArr = [ 'abc', 'cde'];
 console.log(testArr.some(test => test == 'abc'));
 
 
-const arr = [4, 5, 6, 7];
+const arr = [4, 4, 4, 4];
 var c = arr.reduce((acc, value) => acc + value);
 console.log(c);
 
+console.log(arr.every(test => test == 4));
 
+const arr2 = [ 4, 5, 6, 7, [9] ];
+console.log(arr2.includes(7));
+console.log(arr2.flatMap((x) => x*x));
+console.log(arr2);
+
+console.log(arr2.flat());
+const search = [ {age: 1, name: 12},
+                 {age: 2, name: 12},
+                 {age: 3, name: 1},           
+]
+
+console.log(search.filter(element => element.name == 12 ));
+
+console.log(search.findIndex(elem => elem.age == 3));
+console.log(search.find(elem => elem.age == 3));
+console.log(search.concat(arr2));
