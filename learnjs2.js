@@ -117,29 +117,67 @@
 
 
 
-const testArr = [ 'abc', 'cde'];
-console.log(testArr.some(test => test == 'abc'));
+// const testArr = [ 'abc', 'cde'];
+// console.log(testArr.some(test => test == 'abc'));
 
 
-const arr = [4, 4, 4, 4];
-var c = arr.reduce((acc, value) => acc + value);
-console.log(c);
+// const arr = [4, 4, 4, 4];
+// var c = arr.reduce((acc, value) => acc + value);
+// console.log(c);
 
-console.log(arr.every(test => test == 4));
+// console.log(arr.every(test => test == 4));
 
-const arr2 = [ 4, 5, 6, 7, [9] ];
-console.log(arr2.includes(7));
-console.log(arr2.flatMap((x) => x*x));
-console.log(arr2);
+// const arr2 = [ 4, 5, 6, 7, [9] ];
+// console.log(arr2.includes(7));
+// console.log(arr2.flatMap((x) => x*x));
+// console.log(arr2);
 
-console.log(arr2.flat());
-const search = [ {age: 1, name: 12},
-                 {age: 2, name: 12},
-                 {age: 3, name: 1},           
-]
+// console.log(arr2.flat());
+// const search = [ {age: 1, name: 12},
+//                  {age: 2, name: 12},
+//                  {age: 3, name: 1},           
+// ]
 
-console.log(search.filter(element => element.name == 12 ));
+// console.log(search.filter(element => element.name == 12 ));
 
-console.log(search.findIndex(elem => elem.age == 3));
-console.log(search.find(elem => elem.age == 3));
-console.log(search.concat(arr2));
+// console.log(search.findIndex(elem => elem.age == 3));
+// console.log(search.find(elem => elem.age == 3));
+// console.log(search.concat(arr2));
+
+
+//Методы объектов 
+// const testObj = {
+//     dollars : 1200,
+//     cashInCreditCard : 200
+// }
+
+// // const testObj2 = {}
+
+// // const newObj = Object.assign(testObj, testObj2);
+
+// const newObj = Object.create(testObj);
+
+// console.log(newObjdollars);
+
+// const obj = {
+//     time : 12.30,
+//     year: 2017
+// }
+
+// const obj2 = {}
+
+// Object.setPrototypeOf(obj2, obj);
+
+// console.log(obj2.time)
+
+// console.log(Object.keys(obj))
+
+
+//Promises
+
+
+let promi = new Promise((resolve, reject) => {
+    throw new Error('%%%');
+})
+
+promi.catch(alert);
