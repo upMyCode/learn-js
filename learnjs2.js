@@ -121,7 +121,8 @@
 // console.log(testArr.some(test => test == 'abc'));
 
 
-// const arr = [4, 4, 4, 4];
+const arr = [4, 4, 4, 4];
+console.log(... arr)
 // var c = arr.reduce((acc, value) => acc + value);
 // console.log(c);
 
